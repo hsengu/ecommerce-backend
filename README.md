@@ -41,6 +41,11 @@ View the application in action [here](https://drive.google.com/file/d/1PkP2wyOwQ
     = Seed DB with Sequelize ORM =
     ==============================
     $ npm run seed
+    
+    ==============================
+    =   Running the Application  =
+    ==============================
+    $ npm start
 
 
 ## Usage
