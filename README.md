@@ -14,7 +14,7 @@
 ## Description
 This project demonstrates the usage of Sequelize to perform Object Realational Mapping on an example database that hosts product information for an e-commerce backend. It utilizes Express.js to expose API endpoints and Sequelize to perform database queries.
 
-View the application in action [here]().
+View the application in action [here](https://drive.google.com/file/d/1PkP2wyOwQyX-8eWOm8qFw6sSJdqJxUGp/view?usp=sharing).
 
 ## Built With
 - Node.js
