@@ -9,7 +9,7 @@ router.get('/', (req, res) => {
   Category.findAll({
     include: [Product]
   }).then(dbCategory => {
-    if (!dbCategories) {
+    if (!dbCategory) {
       res.status(404).json({ message: 'No categories found!' });
       return;
     }
