@@ -9,6 +9,10 @@ router.get('/', (req, res) => {
   Category.findAll({
     include: [Product]
   }).then(dbCategory => {
+    if (!dbCategories) {
+      res.status(404).json({ message: 'No categories found!' });
+      return;
+    }
     res.json(dbCategory)
   }).catch(err => res.status(500).json(err));
 });
@@ -22,6 +26,10 @@ router.get('/:id', (req, res) => {
       id: req.params.id
     }
   }).then(dbCategory => {
+    if (!dbCategory) {
+      res.status(404).json({ message: 'No category with this id!' });
+      return;
+    }
     res.json(dbCategory)
   }).catch(err => res.status(500).json(err));
 });
@@ -41,6 +49,10 @@ router.put('/:id', (req, res) => {
       id: req.body.id
     }
   }).then(dbCategory => {
+    if (!dbCategory) {
+      res.status(404).json({ message: 'No product found with this id!' });
+      return;
+    }
     res.json(dbCategory)
   }).catch(err => res.status(500).json(err));
 });
@@ -52,6 +64,10 @@ router.delete('/:id', (req, res) => {
       id: req.params.id
     }
   }).then(dbCategory => {
+    if (!dbCategory) {
+      res.status(404).json({ message: 'No category with this id!' });
+      return;
+    }
     res.json(dbCategory)
   }).catch(err => res.status(500).json(err))
 });

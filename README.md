@@ -12,35 +12,45 @@
 * [License](#license)
 
 ## Description
+This project demonstrates the usage of Sequelize to perform Object Realational Mapping on an example database that hosts product information for an e-commerce backend. It utilizes Express.js to expose API endpoints and Sequelize to perform database queries.
 
+View the application in action [here]().
 
 ## Built With
 - Node.js
+- Express.js
+- MySql
+- Sequelize ORM
 
 ## Installation
     =============
     = Git Setup =
     =============
-	git clone https://github.com/hsengu/ecommerce-backend
-	cd ./ecommerce-backend
-	npm install
+	$ git clone https://github.com/hsengu/ecommerce-backend
+	$ cd ./ecommerce-backend
+	$ npm install
 
     ==================
     = MySql DB Setup =
     ==================
-    mysql -u your_username -p
+    $ mysql -u your_username -p
     source db/schema.sql
-    source db/seeds.sql
+    quit
+    
+    ==============================
+    = Seed DB with Sequelize ORM =
+    ==============================
+    $ npm run seed
 
 
 ## Usage
-	npm start
+	$ npm start
 
 ## Contributing to E-commerce Back End
 Please follow contribution guidelines at the [Contributor Covenant](https://www.contributor-covenant.org/version/2/1/code_of_conduct/) to contribute to Employee Tracker.
 
 ## Tests
-    There are no test available for this application
+    There are no tests available for this application
 
 ## Questions
 Contact me at the following:
